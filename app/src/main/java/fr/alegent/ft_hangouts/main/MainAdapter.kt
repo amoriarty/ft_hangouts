@@ -1,37 +1,14 @@
-package fr.alegent.ft_hangouts
+package fr.alegent.ft_hangouts.main
 
-import android.support.v7.app.AppCompatActivity
-import android.os.Bundle
 import android.support.v7.widget.RecyclerView
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.TextView
-import kotlinx.android.synthetic.main.activity_main.*
+import fr.alegent.ft_hangouts.models.Contact
+import fr.alegent.ft_hangouts.R
 
-class ContactsActivity: AppCompatActivity() {
-    private val datasource = ContactsAdapter()
-
-    override fun onCreate(savedInstanceState: Bundle?) {
-        super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_main)
-        AddContactButton.setOnClickListener { handleAdd() }
-
-        ContactsRecyclerView.apply {
-            setHasFixedSize(true)
-            adapter = datasource
-        }
-    }
-
-    // TODO: Push new contact activity
-    private fun handleAdd() {
-        val contact = Contact("Hello World", "Hello World")
-        datasource.add(contact)
-    }
-
-}
-
-class ContactsAdapter: RecyclerView.Adapter<ContactsAdapter.ViewHolder>() {
+class MainAdapter: RecyclerView.Adapter<MainAdapter.ViewHolder>() {
     var items = arrayOf<Contact>()
 
     fun add(item: Contact) {

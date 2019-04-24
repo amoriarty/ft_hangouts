@@ -1,4 +1,7 @@
 <resources>
     <string name="app_name">ft_hangouts</string>
     <string name="contact_image">Profile image for a contact</string>
+    <string name="title_activity_new_contact">New Contact</string>
+    <string name="menu_new_contact_save_button">Save</string>
+    <string name="menu_new_contact_cancel_button">Cancel</string>
 </resources>
