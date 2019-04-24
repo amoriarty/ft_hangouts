@@ -4,12 +4,13 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    tools:context=".ContactsActivity">
 
     <android.support.v7.widget.RecyclerView
-        android:id="@+id/ContactsRecycler"
-        android:layout_width="395dp"
-        android:layout_height="715dp"
+        android:id="@+id/ContactsRecyclerView"
+        app:layoutManager="android.support.v7.widget.LinearLayoutManager"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"

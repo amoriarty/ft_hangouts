@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">ft_hangouts</string>
+    <string name="contact_image">Profile image for a contact</string>
 </resources>
