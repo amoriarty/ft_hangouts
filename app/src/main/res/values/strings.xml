@@ -5,14 +5,21 @@
     <!-- Contact Cell -->
     <string name="contact_cell_image_description">Profile image for a contact</string>
 
-    <!-- New Contact Activity -->
-    <string name="title_activity_new_contact">New Contact</string>
-    <string name="menu_new_contact_save_button">Save</string>
-    <string name="menu_new_contact_cancel_button">Cancel</string>
-    <string name="new_contact_image_description">Image to define during contact creation</string>
-    <string name="new_contact_name_text_hint">Name</string>
-    <string name="new_contact_phone_text_hint">Phone Number</string>
-    <string name="new_contact_invalid_contact_title">Contact is invalid</string>
-    <string name="new_contact_empty_name_message">Name can\'t be empty</string>
-    <string name="new_contact_empty_phone_message">Phone can\'t be empty</string>
+    <!-- Edit Contact Activity -->
+    <string name="menu_edit_contact_save_button">Save</string>
+    <string name="menu_edit_contact_cancel_button">Cancel</string>
+    <string name="activity_edit_contact_new_contact_title">New Contact</string>
+    <string name="activity_edit_contact_edit_contact_title">Edit Contact</string>
+    <string name="activity_edit_contact_image_description">Image to define during contact creation</string>
+    <string name="activity_edit_contact_name_text_hint">Name</string>
+    <string name="activity_edit_contact_phone_text_hint">Phone Number</string>
+    <string name="activity_edit_contact_invalid_contact_title">Contact is invalid</string>
+    <string name="activity_edit_contact_empty_name_message">Name can\'t be empty</string>
+    <string name="activity_edit_contact_empty_phone_message">Phone can\'t be empty</string>
+
+    <!-- Contact Activity -->
+    <string name="activity_contact_sms_button">SEND A SMS</string>
+    <string name="activity_contact_edit_button">EDIT CONTACT</string>
+    <string name="activity_contact_delete_button">DELETE</string>
+    <string name="activity_contact_image_description">Profile image for a contact</string>
 </resources>

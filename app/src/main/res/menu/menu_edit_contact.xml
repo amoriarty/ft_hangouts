@@ -4,12 +4,12 @@
 
     <item
         android:id="@+id/cancel_button"
-        android:title="@string/menu_new_contact_cancel_button"
+        android:title="@string/menu_edit_contact_cancel_button"
         app:showAsAction="ifRoom" />
 
     <item
         android:id="@+id/save_button"
-        android:title="@string/menu_new_contact_save_button"
+        android:title="@string/menu_edit_contact_save_button"
         app:showAsAction="ifRoom" />
 
 </menu>

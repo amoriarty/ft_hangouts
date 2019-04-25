@@ -1,19 +1,19 @@
 package fr.alegent.ft_hangouts.main
 
 import android.support.v7.widget.RecyclerView
-import android.util.Log
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.TextView
 import fr.alegent.ft_hangouts.models.Contact
 import fr.alegent.ft_hangouts.R
+import fr.alegent.ft_hangouts.services.ContactsService
 
-class MainAdapter(private val getItems: () -> Array<Contact>):
+class MainAdapter(private val onItemClick: (position: Int) -> Unit):
     RecyclerView.Adapter<MainAdapter.ViewHolder>() {
 
-    private val items: Array<Contact>
-        get() = getItems()
+    private val items: MutableList<Contact>
+        get() = ContactsService.contacts
 
     class ViewHolder(view: View): RecyclerView.ViewHolder(view) {
         val name: TextView = itemView.findViewById(R.id.name_text_view)
@@ -33,10 +33,6 @@ class MainAdapter(private val getItems: () -> Array<Contact>):
         holder.name.text = items[position].name
         holder.number.text = items[position].number
         holder.itemView.setOnClickListener { onItemClick(position) }
-    }
-
-    private fun onItemClick(position: Int) {
-        Log.d("MainAdapter", "Click on item $position")
     }
 
 }
