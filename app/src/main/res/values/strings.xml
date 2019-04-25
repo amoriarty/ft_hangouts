@@ -1,6 +1,7 @@
 <resources>
     <!-- Main Activity -->
     <string name="app_name">ft_hangouts</string>
+    <string name="activity_main_greeting">Great to see you since</string>
 
     <!-- Contact Cell -->
     <string name="contact_cell_image_description">Profile image for a contact</string>
