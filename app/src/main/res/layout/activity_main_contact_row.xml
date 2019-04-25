@@ -6,7 +6,7 @@
     android:layout_height="wrap_content">
 
     <ImageView
-        android:id="@+id/ContactImageView"
+        android:id="@+id/image_view"
         android:layout_width="60dp"
         android:layout_height="60dp"
         android:layout_marginStart="8dp"
@@ -19,21 +19,21 @@
         app:srcCompat="@mipmap/ic_launcher_round" />
 
     <TextView
-        android:id="@+id/ContactNameTextView"
+        android:id="@+id/name_text_view"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
         android:textSize="20sp"
-        app:layout_constraintStart_toEndOf="@+id/ContactImageView"
-        app:layout_constraintTop_toTopOf="@+id/ContactImageView" />
+        app:layout_constraintStart_toEndOf="@+id/image_view"
+        app:layout_constraintTop_toTopOf="@+id/image_view" />
 
     <TextView
-        android:id="@+id/ContactNumberTextView"
+        android:id="@+id/number_text_view"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="4dp"
         android:textSize="16sp"
-        app:layout_constraintStart_toStartOf="@+id/ContactNameTextView"
-        app:layout_constraintTop_toBottomOf="@+id/ContactNameTextView" />
+        app:layout_constraintStart_toStartOf="@+id/name_text_view"
+        app:layout_constraintTop_toBottomOf="@+id/name_text_view" />
 
 </android.support.constraint.ConstraintLayout>

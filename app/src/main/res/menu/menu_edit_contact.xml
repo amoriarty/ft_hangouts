@@ -3,12 +3,12 @@
     xmlns:app="http://schemas.android.com/apk/res-auto">
 
     <item
-        android:id="@+id/MenuCancelButton"
+        android:id="@+id/cancel_button"
         android:title="@string/menu_new_contact_cancel_button"
         app:showAsAction="ifRoom" />
 
     <item
-        android:id="@+id/MenuSaveButton"
+        android:id="@+id/save_button"
         android:title="@string/menu_new_contact_save_button"
         app:showAsAction="ifRoom" />
 
