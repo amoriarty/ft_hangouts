@@ -1,7 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+    <!-- Launcher Background -->
     <color name="ic_launcher_background">#000000</color>
-    <color name="colorPrimary">#008577</color>
-    <color name="colorPrimaryDark">#00574B</color>
-    <color name="colorAccent">#D81B60</color>
+
+    <!-- Light Theme -->
+    <color name="light_primary">#FFFFFF</color>
+    <color name="light_accent">#000000</color>
+    <color name="light_text">#000000</color>
+
 </resources>

@@ -3,6 +3,8 @@ package fr.alegent.ft_hangouts.main
 import android.content.Intent
 import android.support.v7.app.AppCompatActivity
 import android.os.Bundle
+import android.view.Menu
+import android.view.MenuItem
 import android.widget.Toast
 import fr.alegent.ft_hangouts.edit_contact.EditContactActivity
 import fr.alegent.ft_hangouts.R
@@ -49,6 +51,19 @@ class MainActivity: AppCompatActivity() {
         }
     }
 
+    override fun onCreateOptionsMenu(menu: Menu?): Boolean {
+        menuInflater.inflate(R.menu.menu_main, menu)
+        return super.onCreateOptionsMenu(menu)
+    }
+
+    override fun onOptionsItemSelected(item: MenuItem?): Boolean {
+        when (item?.itemId) {
+            R.id.dark_button -> { handleDarkTheme() }
+            R.id.light_button -> { handleLightTheme() }
+        }
+        return super.onOptionsItemSelected(item)
+    }
+
     override fun onResume() {
         super.onResume()
         datasource.notifyDataSetChanged()
@@ -59,6 +74,10 @@ class MainActivity: AppCompatActivity() {
         inForeground = true
         startActivity(intent)
     }
+
+    private fun handleDarkTheme() {}
+
+    private fun handleLightTheme() {}
 
     private fun onItemClick(position: Int) {
         val intent = Intent(this, ContactActivity::class.java)
