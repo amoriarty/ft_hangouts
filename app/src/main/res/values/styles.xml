@@ -4,6 +4,16 @@
     <style name="LightTheme" parent="Theme.AppCompat.Light">
         <item name="colorPrimary">@color/light_primary</item>
         <item name="colorAccent">@color/light_accent</item>
+        <item name="android:tint">@color/light_accent</item>
+        <item name="android:backgroundTint">@color/light_primary</item>
+    </style>
+
+    <!-- Dark Theme -->
+    <style name="DarkTheme" parent="Theme.AppCompat">
+        <item name="colorPrimary">@color/dark_primary</item>
+        <item name="colorAccent">@color/dark_accent</item>
+        <item name="android:tint">@color/dark_accent</item>
+        <item name="android:backgroundTint">@color/dark_primary</item>
     </style>
 
 </resources>

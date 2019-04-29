@@ -8,4 +8,9 @@
     <color name="light_accent">#000000</color>
     <color name="light_text">#000000</color>
 
+    <!-- Dark Theme -->
+    <color name="dark_primary">#000000</color>
+    <color name="dark_accent">#FFFFFF</color>
+    <color name="dark_text">#FFFFFF</color>
+
 </resources>
