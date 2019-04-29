@@ -5,6 +5,8 @@
 
     <dist:module dist:instant="true" />
 
+    <uses-permission android:name="android.permission.SEND_SMS" />
+
     <application
         android:allowBackup="true"
         android:fullBackupContent="false"
@@ -13,11 +15,11 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/LightTheme">
+        <activity android:name=".sms.SMSActivity" />
         <activity android:name=".contact.ContactActivity" />
         <activity
             android:name=".edit_contact.EditContactActivity"
-            android:label="@string/activity_edit_contact_new_contact_title">
-        </activity>
+            android:label="@string/activity_edit_contact_new_contact_title" />
         <activity android:name=".main.MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

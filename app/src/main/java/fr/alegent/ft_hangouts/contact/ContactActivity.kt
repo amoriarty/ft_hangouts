@@ -8,6 +8,8 @@ import fr.alegent.ft_hangouts.edit_contact.EditContactActivity
 import fr.alegent.ft_hangouts.main.MainActivity
 import fr.alegent.ft_hangouts.models.Contact
 import fr.alegent.ft_hangouts.services.ContactsService
+import fr.alegent.ft_hangouts.services.ThemeService
+import fr.alegent.ft_hangouts.sms.SMSActivity
 import kotlinx.android.synthetic.main.activity_contact.*
 
 class ContactActivity : AppCompatActivity() {
@@ -15,6 +17,7 @@ class ContactActivity : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
+        setTheme(ThemeService.current)
         setContentView(R.layout.activity_contact)
         id = intent.getIntExtra(ContactsService.CONTACT_ID_KEY, -1)
         sms_button.setOnClickListener { handleSMS() }
@@ -30,7 +33,11 @@ class ContactActivity : AppCompatActivity() {
         number_text_view.text = contact.number
     }
 
-    private fun handleSMS() {}
+    private fun handleSMS() {
+        val intent = Intent(this, SMSActivity::class.java)
+        intent.putExtra(ContactsService.CONTACT_ID_KEY, id)
+        startActivity(intent)
+    }
 
     private fun handleEdit() {
         val intent = Intent(this, EditContactActivity::class.java)

@@ -25,4 +25,8 @@
     <string name="activity_contact_edit_button">EDIT CONTACT</string>
     <string name="activity_contact_delete_button">DELETE</string>
     <string name="activity_contact_image_description">Profile image for a contact</string>
+
+    <!-- SMS Activity -->
+    <string name="activity_sms_send_button">SEND</string>
+    <string name="activity_sms_autofill_hint">Type your message here</string>
 </resources>

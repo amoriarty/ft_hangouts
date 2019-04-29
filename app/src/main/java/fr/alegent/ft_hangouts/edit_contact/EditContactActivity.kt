@@ -8,6 +8,7 @@ import android.view.MenuItem
 import fr.alegent.ft_hangouts.R
 import fr.alegent.ft_hangouts.models.Contact
 import fr.alegent.ft_hangouts.services.ContactsService
+import fr.alegent.ft_hangouts.services.ThemeService
 import kotlinx.android.synthetic.main.activity_edit_contact.*
 
 class EditContactActivity: AppCompatActivity() {
@@ -15,6 +16,7 @@ class EditContactActivity: AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
+        setTheme(ThemeService.current)
         setContentView(R.layout.activity_edit_contact)
 
         val id = intent.getIntExtra(ContactsService.CONTACT_ID_KEY, -1)
