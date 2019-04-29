@@ -10,6 +10,7 @@ import fr.alegent.ft_hangouts.edit_contact.EditContactActivity
 import fr.alegent.ft_hangouts.R
 import fr.alegent.ft_hangouts.contact.ContactActivity
 import fr.alegent.ft_hangouts.services.ContactsService
+import fr.alegent.ft_hangouts.services.ThemeService
 import kotlinx.android.synthetic.main.activity_main.*
 import java.time.LocalDateTime
 import java.time.format.DateTimeFormatter
@@ -41,6 +42,7 @@ class MainActivity: AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
+        setTheme(ThemeService.current)
         setContentView(R.layout.activity_main)
         add_button.setOnClickListener { handleAdd() }
         datasource = MainAdapter { onItemClick(it) }
@@ -58,8 +60,8 @@ class MainActivity: AppCompatActivity() {
 
     override fun onOptionsItemSelected(item: MenuItem?): Boolean {
         when (item?.itemId) {
-            R.id.dark_button -> { handleDarkTheme() }
-            R.id.light_button -> { handleLightTheme() }
+            R.id.dark_button -> { handleThemeChange(R.style.DarkTheme) }
+            R.id.light_button -> { handleThemeChange(R.style.LightTheme) }
         }
         return super.onOptionsItemSelected(item)
     }
@@ -75,9 +77,12 @@ class MainActivity: AppCompatActivity() {
         startActivity(intent)
     }
 
-    private fun handleDarkTheme() {}
-
-    private fun handleLightTheme() {}
+    private fun handleThemeChange(theme: Int) {
+        val intent = intent
+        ThemeService.current = theme
+        finish()
+        startActivity(intent)
+    }
 
     private fun onItemClick(position: Int) {
         val intent = Intent(this, ContactActivity::class.java)
