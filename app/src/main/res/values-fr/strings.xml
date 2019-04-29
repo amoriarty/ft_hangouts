@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">ft_hangouts</string>
+    <string name="activity_contact_delete_button">SUPPRIMER</string>
+    <string name="activity_contact_edit_button">EDITER</string>
+    <string name="activity_contact_image_description">Image de profile du contact</string>
+    <string name="activity_contact_sms_button">ENVOYER UN SMS</string>
+    <string name="activity_edit_contact_edit_contact_title">Editer le contact</string>
+    <string name="activity_edit_contact_empty_name_message">Le nom ne peut etre vide</string>
+    <string name="activity_edit_contact_empty_phone_message">Le téléphone ne peut être vide</string>
+    <string name="activity_edit_contact_image_description">Image défini durant la création du contact</string>
+    <string name="activity_edit_contact_invalid_contact_title">Le contact est invalide</string>
+    <string name="activity_edit_contact_name_text_hint">Nom</string>
+    <string name="activity_edit_contact_new_contact_title">Nouveau Contact</string>
+    <string name="activity_edit_contact_phone_text_hint">Numéro de Téléphone</string>
+    <string name="activity_main_greeting">Sympa de vous revoir depuis</string>
+    <string name="activity_sms_autofill_hint">Taper votre message ici</string>
+    <string name="activity_sms_send_button">ENVOYER</string>
+    <string name="contact_cell_image_description">Image de profile pour le contact</string>
+    <string name="menu_edit_contact_cancel_button">Annuler</string>
+    <string name="menu_edit_contact_save_button">Sauvegarder</string>
+    <string name="menu_main_dark">Theme Sombre</string>
+    <string name="menu_main_light">Theme Clair</string>
+</resources>
